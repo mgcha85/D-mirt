@@ -11,6 +11,8 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 ```markdown
 Syntax highlighted code block
 
-![Image](img/trn_result_by_cell_line.png)
+![Image](/img/trn_result_by_cell_line.png)
 training result by cell lines. X-axis is epoch and y-axis is in the title.
+
+
 
