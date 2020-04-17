@@ -12,20 +12,20 @@ Example of Tranining data [peak, H3K4me3, GM12878]</div>
 <div align='center'><img align="center" src="/img/A549_24.png"><br>
 A549 H3K4me3 pattern, center is annotated TSS.</div>
 
-<div align='center'><img align="center" src="/img/GM12878_24.png"></div>
-GM12878 H3K4me3 pattern, center is annotated TSS.
+<div align='center'><img align="center" src="/img/GM12878_24.png"><br>
+GM12878 H3K4me3 pattern, center is annotated TSS.</div>
 
-<div align='center'><img align="center" src="/img/HelaS3_24.png"></div>
-HelaS3 H3K4me3 pattern, center is annotated TSS.
+<div align='center'><img align="center" src="/img/HelaS3_24.png"><br>
+HelaS3 H3K4me3 pattern, center is annotated TSS.</div>
 
-<div align='center'><img align="center" src="/img/HepG2_24.png"></div>
-HepG2 H3K4me3 pattern, center is annotated TSS.
+<div align='center'><img align="center" src="/img/HepG2_24.png"><br>
+HepG2 H3K4me3 pattern, center is annotated TSS.</div>
 
-<div align='center'><img align="center" src="/img/HES_24.png"></div>
-HES H3K4me3 pattern, center is annotated TSS.
+<div align='center'><img align="center" src="/img/HES_24.png"><br>
+HES H3K4me3 pattern, center is annotated TSS.</div>
 
-<div align='center'><img align="center" src="/img/K562_24.png"></div>
-K562 H3K4me3 pattern, center is annotated TSS.
+<div align='center'><img align="center" src="/img/K562_24.png"><br>
+K562 H3K4me3 pattern, center is annotated TSS.</div>
 
-<div align='center'><img align="center" src="/img/MCF7_24.png"></div>
-MCF7 H3K4me3 pattern, center is annotated TSS.
+<div align='center'><img align="center" src="/img/MCF7_24.png"><br>
+MCF7 H3K4me3 pattern, center is annotated TSS.</div>
