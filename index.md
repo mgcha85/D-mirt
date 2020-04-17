@@ -9,3 +9,24 @@ training result by cell lines. X-axis is epoch and y-axis is in the title.
 ![Image](/img/example_of_H3K4me3_GM_trn_data.gif)
 
 Example of Tranining data [peak, H3K4me3, GM12878]
+
+![Image](/img/A549_24.png)
+A549 H3K4me3 pattern, center is annotated TSS.
+
+![Image](/img/GM12878_24.png)
+GM12878 H3K4me3 pattern, center is annotated TSS.
+
+![Image](/img/HelaS3_24.png)
+HelaS3 H3K4me3 pattern, center is annotated TSS.
+
+![Image](/img/HepG2_24.gif)
+HepG2 H3K4me3 pattern, center is annotated TSS.
+
+![Image](/img/HES_24.gif)
+HES H3K4me3 pattern, center is annotated TSS.
+
+![Image](/img/K562_24.gif)
+K562 H3K4me3 pattern, center is annotated TSS.
+
+![Image](/img/MCF7_24.gif)
+MCF7 H3K4me3 pattern, center is annotated TSS.
