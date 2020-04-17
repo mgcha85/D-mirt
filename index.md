@@ -6,7 +6,7 @@ training result by cell lines. X-axis is epoch and y-axis is in the title.
 
 ![Image](/img/result_figure0.png)
 
-<div align='center'>![Image](/img/example_of_H3K4me3_GM_trn_data.gif)</div>
+<img align="center" src="/img/example_of_H3K4me3_GM_trn_data.gif">
 
 Example of Tranining data [peak, H3K4me3, GM12878]
 
