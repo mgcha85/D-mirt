@@ -6,11 +6,11 @@ training result by cell lines. X-axis is epoch and y-axis is in the title.
 
 ![Image](/img/result_figure0.png)
 
-<div align='center'><img align="center" src="/img/example_of_H3K4me3_GM_trn_data.gif"></div>
-Example of Tranining data [peak, H3K4me3, GM12878]
+<div align='center'><img align="center" src="/img/example_of_H3K4me3_GM_trn_data.gif">
+Example of Tranining data [peak, H3K4me3, GM12878]</div>
 
-<div align='center'><img align="center" src="/img/A549_24.png"></div>
-A549 H3K4me3 pattern, center is annotated TSS.
+<div align='center'><img align="center" src="/img/A549_24.png">
+A549 H3K4me3 pattern, center is annotated TSS.</div>
 
 <div align='center'><img align="center" src="/img/GM12878_24.png"></div>
 GM12878 H3K4me3 pattern, center is annotated TSS.
