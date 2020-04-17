@@ -38,3 +38,7 @@ K562 H3K4me3 pattern, center is annotated TSS
 ![Image](/img/MCF7_24.png)
 
 MCF7 H3K4me3 pattern, center is annotated TSS
+
+![Image](/img/eponine_comp.png)
+
+Eponine comparison; "w" is with eponine and "wo" is without eponine.
