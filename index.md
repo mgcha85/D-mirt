@@ -44,3 +44,11 @@ evaluate predicted result by using GRO-cap, H3K4me3 and CAGE-tag .
 **dmirt** (get GRO-cap feature from D-miRT result)  
 **h3k4me3** (get H3K4me3 feature from the above three papers' result)  
 **cage_tag** (get CAGE-tag feature from the above three papers' result)  
+
+
+# Visualization
+## visualization.py
+visualize the trained model by using innvestigate
+
+### visualization methods:   
+**visualization** (show trained feature by using innvestigate)  
