@@ -52,3 +52,23 @@ visualize the trained model by using innvestigate
 
 ### visualization methods:   
 **visualization** (show trained feature by using innvestigate)  
+
+
+# Others  
+## Database.py  
+conrol sqlite data  
+
+
+## histogram_cl.py
+make histogram for trainiing or evaluation data.  
+This use open_cl to use GPU. To use this, you much install open_cl abd pyopencl.  
+
+## XmlHandler
+save or load XML file  
+
+
+## fids.xlsx
+show that file ID for this training data
+## user_param.xml
+store user prameter such as step, bandwidth and bin size.
+
