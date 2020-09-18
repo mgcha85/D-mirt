@@ -1,44 +1,80 @@
-## Welcome to GitHub Pages
-# D-mirT training result
+## Welcome to D-miRT Pages
 
-![Image](/img/trn_result_by_cell_line.png)
+# Training
+## network.py  
+training D-miRT model
 
-training result by cell lines. X-axis is epoch and y-axis is in the title.
+### class:  
+**Generator** -> provide seperated data during training  
+**Network** -> training class  
+  
+### Network methods:  
+**sequential_model** (CNN model for sequential model)  
+**model** (CNN mode for parallel model)  
+**get_file_list** (load and split to test, validation and training data)  
+**trainAndValidate** (training parallel model)  
+**sequential_train** (training sequential model)  
+**crossvalidation** (10-fold cross validation)  
+**test_unseen_cell_line** (test the model by using unseen cell line)  
 
-![Image](/img/result_figure0.png)
 
-![Image](/img/example_of_H3K4me3_GM_trn_data.gif)
+# prediction  
+## predict.py  
+predict pre-miRNA TSS by using D-miRT model.  
+This scans 50kb upstream from the pre-miRNA start.  
 
-Example of Tranining data [peak, H3K4me3, GM12878]
+### predict methods: 
+**get_peak** (get peak data)  
+**convert_sequence** (convert strand - to strand +)  
+**get_sequence** (get sequence data)  
+**set_data** (set both peak and sequence data)  
+**run** (predict pre-miRNA TSS)  
+**most_likely_tss** (filter the predicted data by two step. first is thresholding (>0.8) and second is to take only duplicates locations)  
+**remove_gene_tss** (remove known gene TSS)  
+**to_sql** (save predicted data to sql)  
 
-![Image](/img/A549_24.png)
 
-A549 H3K4me3 pattern, center is annotated TSS
+# Evaluation
+## evaluation.py
+evaluate predicted result by using GRO-cap, H3K4me3 and CAGE-tag .
 
-![Image](/img/GM12878_24.png)
+### evaluation methods: 
+**pro** (get GRO-cap feature from PRO-miRNA result)  
+**hua** (get GRO-cap feature from HUA et al result)  
+**dmirt** (get GRO-cap feature from D-miRT result)  
+**h3k4me3** (get H3K4me3 feature from the above three papers' result)  
+**cage_tag** (get CAGE-tag feature from the above three papers' result)  
 
-GM12878 H3K4me3 pattern, center is annotated TSS
 
-![Image](/img/HelaS3_24.png)
+# Visualization
+## visualization.py
+visualize the trained model by using innvestigate
 
-HelaS3 H3K4me3 pattern, center is annotated TSS
+### visualization methods:   
+**visualization** (show trained feature by using innvestigate)  
 
-![Image](/img/HepG2_24.png)
 
-HepG2 H3K4me3 pattern, center is annotated TSS
+# Others  
+## Database.py  
+conrol sqlite data  
 
-![Image](/img/HES_24.png)
 
-HES H3K4me3 pattern, center is annotated TSS
+## histogram_cl.py
+make histogram for training or evaluation data.  
+This requires open_cl to use GPU. To use this, you much install open_cl and pyopencl.  
 
-![Image](/img/K562_24.png)
+## XmlHandler
+save or load XML file  
 
-K562 H3K4me3 pattern, center is annotated TSS
 
-![Image](/img/MCF7_24.png)
+## fids.xlsx
+show that file ID for this training data
+## user_param.xml
+store user prameter such as step, bandwidth and bin size.
 
-MCF7 H3K4me3 pattern, center is annotated TSS
 
-![Image](/img/eponine_comp.png)
+## input and output folder structure  
+D-miRT requires specific folder sturcture.  
+The input data and folder structure are linked at here.  
 
-Eponine comparison; "w" is with eponine and "wo" is without eponine.
+
