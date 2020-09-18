@@ -32,3 +32,15 @@ This scans 50kb upstream from the pre-miRNA start.
 **most_likely_tss** (filter the predicted data by two step. first is thresholding (>0.8) and second is to take only duplicates locations)  
 **remove_gene_tss** (remove known gene TSS)  
 **to_sql** (save predicted data to sql)  
+
+
+# Evaluation
+## evaluation.py
+evaluate predicted result by using GRO-cap, H3K4me3 and CAGE-tag .
+
+### evaluation methods: 
+**pro** (get GRO-cap feature from PRO-miRNA result)  
+**hua** (get GRO-cap feature from HUA et al result)  
+**dmirt** (get GRO-cap feature from D-miRT result)  
+**h3k4me3** (get H3K4me3 feature from the above three papers' result)  
+**cage_tag** (get CAGE-tag feature from the above three papers' result)  
