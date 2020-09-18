@@ -1,44 +1,17 @@
-## Welcome to GitHub Pages
-# D-mirT training result
+## Welcome to D-miRT Pages
+# Training
 
-![Image](/img/trn_result_by_cell_line.png)
+## network.py  
 
-training result by cell lines. X-axis is epoch and y-axis is in the title.
+class:  
+Generator -> provide seperated data during training
+Network -> training class
 
-![Image](/img/result_figure0.png)
-
-![Image](/img/example_of_H3K4me3_GM_trn_data.gif)
-
-Example of Tranining data [peak, H3K4me3, GM12878]
-
-![Image](/img/A549_24.png)
-
-A549 H3K4me3 pattern, center is annotated TSS
-
-![Image](/img/GM12878_24.png)
-
-GM12878 H3K4me3 pattern, center is annotated TSS
-
-![Image](/img/HelaS3_24.png)
-
-HelaS3 H3K4me3 pattern, center is annotated TSS
-
-![Image](/img/HepG2_24.png)
-
-HepG2 H3K4me3 pattern, center is annotated TSS
-
-![Image](/img/HES_24.png)
-
-HES H3K4me3 pattern, center is annotated TSS
-
-![Image](/img/K562_24.png)
-
-K562 H3K4me3 pattern, center is annotated TSS
-
-![Image](/img/MCF7_24.png)
-
-MCF7 H3K4me3 pattern, center is annotated TSS
-
-![Image](/img/eponine_comp.png)
-
-Eponine comparison; "w" is with eponine and "wo" is without eponine.
+Network methods:
+sequential_model (CNN model for sequential model)
+model (CNN mode for parallel model)
+get_file_list (load and split to test, validation and training data)
+trainAndValidate (training parallel model)
+sequential_train (training sequential model)
+crossvalidation (10-fold cross validation)
+test_unseen_cell_line (test the model by using unseen cell line)
