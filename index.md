@@ -1,80 +1,21 @@
-## Welcome to D-miRT Pages
+# D-miRT: A two-stream convolutional neural network for mi-croRNA transcription start site feature integration and identi-fication
+#### Mingyu Cha<sup>1</sup>, Amlan Talukder<sup>1</sup>, Clayton Barham<sup>1</sup>, Xiaoman Li<sup>2*</sup>, Haiyan Hu<sup>1*</sup>
 
-# Training
-## network.py  
-training D-miRT model
+## ABSTRACT
 
-### class:  
-**Generator** -> provide seperated data during training  
-**Network** -> training class  
-  
-### Network methods:  
-**sequential_model** (CNN model for sequential model)  
-**model** (CNN mode for parallel model)  
-**get_file_list** (load and split to test, validation and training data)  
-**trainAndValidate** (training parallel model)  
-**sequential_train** (training sequential model)  
-**crossvalidation** (10-fold cross validation)  
-**test_unseen_cell_line** (test the model by using unseen cell line)  
+MicroRNAs (miRNAs) play important roles in post-transcriptional gene regulation and phenotype development. Under-standing the regulation of miRNA genes is critical to understanding gene regulation. One of the challenges to studying miRNA gene regulation is the lack of condition-specific annotation of miRNA transcription start sites (TSSs). Unlike pro-tein-coding genes, miRNA TSSs can be tens of thousands of nucleotides away from the precursor miRNAs and they are hard to be detected by conventional RNA-Seq experiments. A number of studies have been attempted to computation-ally predict miRNA TSSs. However, high-resolution condition-specific miRNA TSS prediction remains a challenging problem.  Recently, deep learning models have been successfully applied to various bioinformatics problems but have not been effectively created for condition-specific miRNA TSS prediction. Here we created a two-stream deep learning model called D-miRT for computational prediction of condition-specific miRNA TSSs. D-miRT is a natural fit for the integration of low-resolution gene transcription activation markers such as DNase-Seq and histone modification data and high-resolution sequence features. We trained the D-miRT model by integrating genome-scale CAGE experiments and transcription activation marker data across multiple cell lines. Compared with alternative computational models on different sets of training data, D-miRT outperformed all baseline models and demonstrated high accuracy for condition-specific miRNA TSS prediction tasks. Comparing with the most recent approaches on cell-specific miRNA TSS identifi-cation using cell lines that were unseen to the model training processes, D-miRT also showed superior performance.
+
+## Download
+The source code of DmiRT is available [here] (http://hulab.ucf.edu/research/projects/DmiRT/DmiRT.zip).  
+
+## Manual
+The manual for running the program is available [here] (http://hulab.ucf.edu/research/projects/DmiRT/DmiRT.txt).  
 
 
-# prediction  
-## predict.py  
-predict pre-miRNA TSS by using D-miRT model.  
-This scans 50kb upstream from the pre-miRNA start.  
-
-### predict methods: 
-**get_peak** (get peak data)  
-**convert_sequence** (convert strand - to strand +)  
-**get_sequence** (get sequence data)  
-**set_data** (set both peak and sequence data)  
-**run** (predict pre-miRNA TSS)  
-**most_likely_tss** (filter the predicted data by two step. first is thresholding (>0.8) and second is to take only duplicates locations)  
-**remove_gene_tss** (remove known gene TSS)  
-**to_sql** (save predicted data to sql)  
+## Authors
+Mingyu Cha1, Amlan Talukder1, Clayton Barham1, Xiaoman Li2*, Haiyan Hu1*
+Department of Computer Science, University Of Central Florida, Orlando, FL 32826, USA.
 
 
-# Evaluation
-## evaluation.py
-evaluate predicted result by using GRO-cap, H3K4me3 and CAGE-tag .
-
-### evaluation methods: 
-**pro** (get GRO-cap feature from PRO-miRNA result)  
-**hua** (get GRO-cap feature from HUA et al result)  
-**dmirt** (get GRO-cap feature from D-miRT result)  
-**h3k4me3** (get H3K4me3 feature from the above three papers' result)  
-**cage_tag** (get CAGE-tag feature from the above three papers' result)  
-
-
-# Visualization
-## visualization.py
-visualize the trained model by using innvestigate
-
-### visualization methods:   
-**visualization** (show trained feature by using innvestigate)  
-
-
-# Others  
-## Database.py  
-conrol sqlite data  
-
-
-## histogram_cl.py
-make histogram for training or evaluation data.  
-This requires open_cl to use GPU. To use this, you much install open_cl and pyopencl.  
-
-## XmlHandler
-save or load XML file  
-
-
-## fids.xlsx
-show that file ID for this training data
-## user_param.xml
-store user prameter such as step, bandwidth and bin size.
-
-
-## input and output folder structure  
-D-miRT requires specific folder sturcture.  
-The input data and folder structure are linked at here.  
 
 
