@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 from XmlHandler import XmlHandler
 
 
-class eval_gro:
+class evaluation:
     def __init__(self, root):
         self.root = root
 
@@ -198,7 +198,7 @@ class eval_gro:
 
 if __name__ == '__main__':
     root = "D:/DmiRT"
-    eg = eval_gro(root)
+    eg = evaluation(root)
 
     cell_lines = ['GM12878', 'K562']
 

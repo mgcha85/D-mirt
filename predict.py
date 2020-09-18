@@ -7,7 +7,7 @@ import os
 # import plaidml.keras
 # plaidml.keras.install_backend()
 
-from keras.models import Model, Sequential, load_model
+from keras.models import load_model
 
 
 class predict:

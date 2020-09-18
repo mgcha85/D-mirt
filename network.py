@@ -5,6 +5,7 @@ import numpy as np
 import pickle as pkl
 import socket
 import os
+import matplotlib.pyplot as plt
 
 os.environ["KERAS_BACKEND"] = "plaidml.keras.backend"
 import plaidml.keras
@@ -81,35 +82,6 @@ class Generator(Sequence):
 class Network:
     def __init__(self, root):
         self.root = root
-
-    def lstm_model(self, peak_in1, peak_in2, seq_in):
-        peak1 = peak_in1
-        peak2 = peak_in2
-        seq = seq_in
-
-        peak1 = LSTM(8)(peak1)
-        peak2 = LSTM(8)(peak2)
-        # peak1 = Bidirectional(LSTM(8))(peak1)
-        # peak2 = Bidirectional(LSTM(8))(peak2)
-
-        for fsize in [16, 32, 64, 128]:
-            seq = Conv1D(filters=fsize, kernel_size=3, padding="same", activation="relu")(seq)
-            seq = Conv1D(filters=fsize, kernel_size=3, padding="same", activation="relu")(seq)
-            seq = BatchNormalization()(seq)
-            seq = MaxPooling1D(pool_size=2, strides=2)(seq)
-        # seq = Bidirectional(LSTM(64))(seq)
-        seq = Flatten()(seq)
-
-        merged = concatenate([peak1, peak2, seq])
-        s = 4096
-        for _ in range(2):
-            merged = Dense(s, activation='relu')(merged)
-            merged = Dropout(rate=0.5)(merged)
-        merged = Dense(50, activation='softmax')(merged)
-
-        model = Model(inputs=[peak_in1, peak_in2, seq_in], outputs=merged)
-        model.summary()
-        return model
 
     def sequential_model(self, peak_in, seq_in):
         peak = peak_in
