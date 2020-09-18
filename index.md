@@ -60,7 +60,7 @@ conrol sqlite data
 
 
 ## histogram_cl.py
-make histogram for trainiing or evaluation data.  
+make histogram for training or evaluation data.  
 This use open_cl to use GPU. To use this, you much install open_cl abd pyopencl.  
 
 ## XmlHandler
