@@ -3,11 +3,11 @@
 
 ## network.py  
 
-class:  
-Generator -> provide seperated data during training
-Network -> training class  
+### class:  
+**Generator** -> provide seperated data during training
+**Network** -> training class  
   
-Network methods:  
+### Network methods:  
 sequential_model (CNN model for sequential model)  
 model (CNN mode for parallel model)  
 get_file_list (load and split to test, validation and training data)  
