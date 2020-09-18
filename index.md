@@ -4,7 +4,7 @@
 ## network.py  
 
 ### class:  
-**Generator** -> provide seperated data during training
+**Generator** -> provide seperated data during training  
 **Network** -> training class  
   
 ### Network methods:  
