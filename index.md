@@ -13,7 +13,7 @@ The manual for running the program is available [here] (http://hulab.ucf.edu/res
 
 
 ## Authors
-Mingyu Cha1, Amlan Talukder1, Clayton Barham1, Xiaoman Li2*, Haiyan Hu1*
+Mingyu Cha<sup>1</sup>, Amlan Talukder<sup>1</sup>, Clayton Barham<sup>1</sup>, Xiaoman Li<sup>2*</sup>, Haiyan Hu<sup>1*</sup>
 Department of Computer Science, University Of Central Florida, Orlando, FL 32826, USA.
 
 
