@@ -72,3 +72,9 @@ show that file ID for this training data
 ## user_param.xml
 store user prameter such as step, bandwidth and bin size.
 
+
+## input and output folder structure
+D-miRT requires specific folder sturcture.
+The input data and folder structure are linked at here.
+
+
